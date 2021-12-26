@@ -1,0 +1,180 @@
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  }
+.wrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 4;
+    align-items: center;
+    align-content: space-between;
+      }
+  
+
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+
+
+.header { display: flex;
+  padding: 10px;
+  background: rgb(187, 245, 242);
+  font-display: left;
+  justify-content:center; 
+
+}
+
+.footer {
+  background: rgb(187, 245, 242);
+  text-align: center ;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.main {
+  text-align: left;
+  background: white;
+}
+
+.aside-1 {
+  background: white;
+}
+
+.aside-2 {
+  padding: 15px;
+  margin:15px;
+  background: white;
+}
+.aside-3 {
+  padding: 15px;
+  margin:15px;
+  background: white;
+}
+
+
+@media all and (min-width: 300px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 300px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 3; }
+  .aside-2 { order: 2; }
+  .aside-3 {order: 4; }
+
+
+
+}
+
+body {
+  padding: 2em; 
+}
+
+/*--FOTO DE PERFIL---------------------------------------------------------------------*/ 
+.Fotox { grid-area: Foto;
+  margin:1px;
+  padding: 1px; 
+  width: 200px;
+  height: 200px; border-radius: 100px;
+  -webkit-box-shadow: 7px 2px 5px 1px rgba(119,119,119,0.74); 
+  box-shadow: 7px 2px 5px 1px rgba(119,119,119,0.74);
+ }
+
+.bear{ 
+  width: 200px; 
+}
+/*--FONTS---------------------------------------------------------------------*/ 
+
+.Hx { display: flex;
+margin:20px;
+padding:0px;
+font-family: "Courier New", Courier, monospace;
+font-size: 25px;
+letter-spacing: 1.2px;
+word-spacing: -2.2px;
+color: #777777;
+font-weight: 400;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: small-caps;
+text-transform: uppercase;
+justify-self:stretch;
+ }
+.h1 { display: flex;
+  margin:0px;
+  padding:0px;
+  font-family: "Courier New", Courier, monospace;
+font-size: 18px;
+letter-spacing: 2.4px;
+word-spacing: -4.2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: small-caps;
+text-transform: lowercase;
+text-align: left;
+   }
+.h2{ display: flex;
+    margin:0px;
+    padding:0px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    word-spacing: -2.2px;
+    color: #777777;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    text-align: left;  
+     }
+.h3{ display: flex;
+      margin:10px;
+      padding:0px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 14px;
+      letter-spacing: 1.2px;
+      word-spacing: -2.2px;
+      color: #777777;
+      font-weight: 400;
+      text-decoration: none solid rgb(68, 68, 68);
+      font-style: normal;
+      text-align: justify;
+    
+       }
+   .h4{        
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        color: #777777;
+        font-weight: 400;
+        text-decoration: none solid rgb(68, 68, 68);
+       
+      
+         }
+/*------------------------------------------------------------------------------------------*/
+
+
+
+/*----SKILLS------------------------------*/       
+
+.containerx {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(68, 68, 68);
+}
+
+.html {width: 90%; background-color: rgb(187, 245, 242); font-family: "Courier New", Courier, monospace;}
+.css {width: 80%; background-color: rgb(187, 245, 242); font-family: "Courier New", Courier, monospace;}
+.js {width: 65%; background-color: rgb(187, 245, 242); font-family: "Courier New", Courier, monospace;}
+.php {width: 60%; background-color: rgb(187, 245, 242); font-family: "Courier New", Courier, monospace;}
